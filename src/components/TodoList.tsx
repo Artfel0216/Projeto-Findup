@@ -15,6 +15,8 @@ function TodoList ({changeTodoList} : {changeTodoList: (value:string) => void}) 
         changeTodoList(newTask)
       }
 
+      localStorage.setItem(newTask, "task")
+
     }
 
     function salvar(newTask: string) {
@@ -25,6 +27,7 @@ function TodoList ({changeTodoList} : {changeTodoList: (value:string) => void}) 
     function deleteTask (index :number) {
 
     }
+
 
 
     return (
