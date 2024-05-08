@@ -51,7 +51,7 @@ export default function Home() {
 
             <div className="bg-zinc-800 w-[70vh] h-[57vh] absolute bottom-[8vh] ml-[26rem] rounded shadow-md">
                 {
-                    todos.map((todo, index ) => (
+                    todos.map ((todo: any, index: number ) => (
                         <Line 
                             key={index}
                             index={index}
