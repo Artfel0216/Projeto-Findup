@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import { Sun } from "lucide-react";
+
 import { Line } from "../components/line";
 import TodoList from "@/components/TodoList";
 
@@ -44,7 +44,7 @@ export default function Home() {
                     T O D O
                 </p>
                 
-                <Sun onclick="newtask" className='w-[2.5rem] h-[3rem] mt-[3.5rem] cursor-pointer' />
+                
             </div>
 
             {/* segundo container container */}
