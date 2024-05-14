@@ -1,8 +1,8 @@
 "use client"
 import { useState } from "react"
-
 import { Line } from "../components/line";
 import TodoList from "@/components/TodoList";
+
 
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
 
             <div className="flex gap-60 h-[15rem] bg-gradient-to-l from-pink-500 to-purple-700 text-white font-bold text-4xl">
                 <p className=" ml-[25rem] mt-[4rem]">
-                    T O D O
+                    T O D O 
                 </p>
                 
                 
