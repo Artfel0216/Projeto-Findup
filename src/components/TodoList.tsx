@@ -6,10 +6,6 @@ function TodoList ({changeTodoList} : {changeTodoList: (value:string) => void}) 
     const [task, setTask] = useState(["arthur"])
     const [newTask, setNewTask] = useState ("")
   
-   
-
-
-     
 
     function handleInputChange (event: any) {
       setNewTask(event.target.value)
@@ -17,33 +13,27 @@ function TodoList ({changeTodoList} : {changeTodoList: (value:string) => void}) 
 
     function addTask (e:any) {
       e.preventDefault("Enter task")
+      
 
       if (newTask.trim() !== "") {
         changeTodoList(newTask)
       }
 
       localStorage.setItem(newTask, "task")
+      setNewTask('')
       
     }
 
     function salvar(newTask: string) {
         localStorage.info = document.getElementById ("dado")
       }
-    
-
-    function deleteTask (index :number) {
-
-    }
-
- 
-
 
     return (
       
               <form id='todo-form' className="absolute flex items-center mt-[10rem]" 
               onSubmit={addTask}>
 
-              <input id="todo-input" type="text" className=" p-[15px] rounded ml-[26rem] w-[22rem] text-zinc-50 h-[2rem] bg-zinc-800 border-none absolute"
+              <input  type="text" className=" p-[15px] rounded ml-[26rem] w-[22rem] text-zinc-50 h-[2rem] bg-zinc-800 border-none absolute"
                
                placeholder='Digite sua tarefa'
                value={newTask}
