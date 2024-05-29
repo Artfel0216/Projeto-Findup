@@ -29,7 +29,6 @@ export default function Home() {
       if (newTask) {
       setTasks([...tasks, newTask]);
       setNewTask(undefined);
-
     }
 }
 
@@ -59,7 +58,7 @@ function clearTasks(event: any) {
 
       {/* segundo container container */}
 
-      <div className="bg-zinc-800 w-[70vh] h-[57vh] absolute bottom-[8vh] ml-[26rem] rounded shadow-md">
+      <div className="bg-zinc-800 w-[78vh] h-[57vh] absolute bottom-[8vh] ml-[26rem] rounded shadow-md">
         {tasks.map((todo: any, index: number) => (
           <Line
             key={index}
