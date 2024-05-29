@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Check, Import, Sun } from "lucide-react";
+import React, {} from "react";
+import { Check,} from "lucide-react";
 
 export interface LineProps {
     index: number;
