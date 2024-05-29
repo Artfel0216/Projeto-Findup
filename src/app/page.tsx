@@ -18,16 +18,18 @@ export default function Home() {
   };
 
   function handleInputChange(event: any) {
+    console.log(event);
     setNewTask({ title: event.target.value, checked: false });
   }
 
   function addTask(e: any) {
-    if (newTask) {
+
+      e.preventDefault("Enter tasks");
+
+      if (newTask) {
       setTasks([...tasks, newTask]);
       setNewTask(undefined);
 
-      e.preventDefault("Enter tasks");
-      e.preventDefault([tasks])
     }
 }
 
